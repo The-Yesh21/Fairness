@@ -123,7 +123,7 @@ export default function AnalysisView({ data }: { data: AnalysisData }) {
             <span className="tag bg-[#F1F5F9] text-slate-500 px-2 py-0.5 rounded-full font-bold text-[10px]">SUBGROUPS</span>
           </div>
           <div className="grid grid-cols-4 gap-1 flex-1">
-             {data.fairness.intersectionalHeatmap.map((item, i) => (
+             {(data.fairness?.intersectionalHeatmap || []).map((item, i) => (
                <div 
                  key={i} 
                  className={cn(
@@ -162,7 +162,7 @@ export default function AnalysisView({ data }: { data: AnalysisData }) {
                <div>Group A</div>
                <div>Group B</div>
              </div>
-             {data.perception.findings.map((finding, idx) => (
+             {(data.perception?.findings || []).map((finding: any, idx: number) => (
                <div key={idx} className="grid grid-cols-[100px_1fr_1fr] gap-3 py-2 border-b border-slate-50">
                  <div className="font-semibold text-[#1E293B]">{finding.original.split(' ')[0]}</div>
                  <div className="text-secondary">{finding.original}</div>
@@ -181,7 +181,7 @@ export default function AnalysisView({ data }: { data: AnalysisData }) {
           </div>
           
           <div className="space-y-3 mt-2 flex-1">
-            {data.behavioral.traits.map((trait, i) => (
+            {(data.behavioral?.traits || []).map((trait, i) => (
               <div key={i} className="flex flex-col gap-1.5">
                 <div className="flex justify-between items-center text-xs">
                   <span className="text-[#475569]">{trait.name}</span>

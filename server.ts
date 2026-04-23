@@ -26,6 +26,10 @@ async function startServer() {
       const content = mReq.file.buffer.toString();
       const records = parse(content, { columns: true, skip_empty_lines: true });
       
+      if (!Array.isArray(records)) {
+        throw new Error("Invalid CSV format");
+      }
+      
       // Auto-detect columns
       const columns = Object.keys(records[0] || {});
       const sensitiveAttributes = columns.filter(col => 

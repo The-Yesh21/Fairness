@@ -148,15 +148,15 @@ export default function UploadView({ onAnalysisComplete }: { onAnalysisComplete:
                 <table className="w-full text-left text-[13px]">
                   <thead className="bg-slate-50 text-on-surface-variant border-b border-border-subtle">
                     <tr>
-                      {previewData.columns.slice(0, 6).map((col: string) => (
+                      {previewData?.columns?.slice(0, 6).map((col: string) => (
                         <th key={col} className="px-6 py-3 font-bold uppercase text-[10px] tracking-wider">{col}</th>
                       ))}
                     </tr>
                   </thead>
                   <tbody className="divide-y divide-slate-100">
-                    {previewData.preview.map((row: any, i: number) => (
+                    {previewData?.preview?.map((row: any, i: number) => (
                       <tr key={i} className="hover:bg-slate-50/50 transition-colors">
-                        {previewData.columns.slice(0, 6).map((col: string) => (
+                        {previewData?.columns?.slice(0, 6).map((col: string) => (
                           <td key={col} className="px-6 py-3 text-primary font-medium">
                             {row[col] === "approved" ? (
                               <span className="bg-success-dim text-success-dark px-2 font-bold py-0.5 rounded-full text-[10px] uppercase">Approved</span>
