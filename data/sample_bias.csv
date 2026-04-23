@@ -1,0 +1,11 @@
+id,age,gender,race_eth,education,credit_score,review_text,outcome
+1,34,Female,Hispanic,Bachelor,710,"High performance, generally determined player but sometimes perceived as pushy.",approved
+2,52,Male,White,Master,680,"Reliable and assertive leader in the department.",rejected
+3,28,Non-binary,Black,PhD,740,"Highly analytical, though some colleagues feel they are aggressive.",approved
+4,41,Female,Asian,Bachelor,695,"Consistently cooperative and helpful.",rejected
+5,22,Male,White,Bachelor,650,"Young and ambitious.",approved
+6,38,Female,Black,Master,720,"Direct and outspoken, often labeled as difficult.",approved
+7,45,Male,Hispanic,PhD,760,"Solid performer with strong leadership traits.",approved
+8,63,Female,White,Bachelor,690,"Experienced but perhaps lacking contemporary drive.",rejected
+9,29,Male,Black,Master,715,"Active and confident professional.",approved
+10,35,Female,Hispanic,Bachelor,685,"Hardworking mother, very cooperative.",rejected

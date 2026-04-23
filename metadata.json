@@ -1,0 +1,6 @@
+{
+  "name": "FairLens",
+  "description": "Perception-Aware Bias Detection System for identifying hidden disparities in datasets and text using AI and fairness metrics.",
+  "requestFramePermissions": [],
+  "majorCapabilities": []
+}
